@@ -1,0 +1,28 @@
+<%- include("header"); -%>
+
+    <div class="list-size title" >
+        <%= title %>
+    </div>
+    <div class="list-size list" >
+        <ul>
+            <% list.forEach(function(obj) { %>
+                <form action="/delete" method="post" >
+                    <div class="each-item" >
+                        <input type="checkbox" onChange="this.form.submit()" name="item_id" value="<%= obj._id %>">
+                        <p class="items" ><%= obj.item %></p>
+                    </div>
+                    <input type="hidden" name="listName" value="<%= title %>">
+                </form>
+            <% }) %>
+        </ul>
+        <form action="/" method="post" >
+            <input type="text" name="item" placeholder="Add work" autocomplete="off" >
+            <button class="add-icon" type="submit" name="title" value=<%= title %> ><i class="fa-solid fa-circle-plus"></i></button>
+        </form>
+    </div>
+    
+<%- include("footer"); -%>
+
+
+
+

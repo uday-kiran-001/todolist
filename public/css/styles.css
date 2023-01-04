@@ -1,0 +1,67 @@
+body{
+    background: linear-gradient(to bottom right,#fd29af  ,#fcfcfc ,#2a6ef7 );
+    min-height: 600px;
+    text-align: center;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.add-icon{
+    border-width: 0;
+    font-size: 50px;
+    color: #2a6ef7;
+    background-color: white;
+    padding: 0;
+    height: 50px;
+}
+
+.title{
+    margin: 3% auto 0;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.each-item{
+    display: -webkit-box;
+    padding: 4% 0 4% 7%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.372);
+}
+
+input[type="text"]{
+    border:none;
+    text-align: center;
+    width: 25vw;
+    margin-left:7% ;
+}
+
+input[type="text"]:focus{
+    outline: none;
+    border-bottom: 1px solid #2a6ef7 ;
+}
+
+input[type="checkbox"]:checked+p{
+    text-decoration: line-through;
+}
+
+.items{
+    margin-left: 5%;
+}
+
+.list{
+    font-weight: 400;
+    font-size: 20px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.list-size{
+    padding:12px 0 ;
+    background-color: white;
+    width: 35vw;
+    border-radius: 20px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
